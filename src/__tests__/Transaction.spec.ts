@@ -78,4 +78,18 @@ describe('Transaction', () => {
       }),
     );
   });
+
+ // it('should not be able to create a transaction with a different type of income and outcome', async() => {
+ //   const response = await request(app).post('/transactions').send({
+ //     title: 'Bicycle',
+ //     type: 'income1',
+ //     value: 3000,
+ //   });
+ //   expect(response.status).toBe(400);
+ //   expect(response.body).toMatchObject(
+ //    expect.objectContaining({
+ //      error: expect.any(String),
+ //    }),
+ //   );
+ // });
 });
